@@ -10,6 +10,7 @@ body {
   background-attachment: fixed;
   color: #ffffff;
   font-family: sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -34,4 +35,38 @@ p {
 .foto {
   width: 350px;
   border-radius: 3% 3% 0 0;
+}
+
+.tlacitka {
+  padding: 0;
+}
+
+.tlacitka li {
+  list-style: none;
+}
+
+.tlacitka a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  color: #ffffff;
+  text-align: center;
+  border-top: 0.5px solid #283e50;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.zacitHrat {
+  background-color: #0197f6;
+}
+
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.zacitHrat:hover {
+  background-color: #0090e9;
 }
