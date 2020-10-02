@@ -39,6 +39,7 @@ p {
 
 .tlacitka {
   padding: 0;
+  margin: 0;
 }
 
 .tlacitka li {
@@ -55,18 +56,75 @@ p {
   border-top: 0.5px solid #283e50;
 }
 
-.pravidla {
+.pravidlaBtn {
   background-color: #1fcca4;
 }
 
-.zacitHrat {
-  background-color: #0197f6;
-}
-
-.pravidla:hover {
+.pravidlaBtn:hover {
   background-color: #1cbb96;
 }
 
-.zacitHrat:hover {
+.zacitHratBtn {
+  background-color: #0197f6;
+}
+
+.zacitHratBtn:hover {
   background-color: #0090e9;
 }
+
+/* speciální styly pro stránku pravidla.html */
+
+.strankaPravidla {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #283e50;
+  flex-direction: column;
+  width: 350px;
+  margin: 50px auto;
+  border-radius: 10px 10px 0 0;
+}
+
+ol.textPravidla {
+  margin: 0px;
+  padding: 0px 40px 30px 50px;
+}
+
+.textPravidla li {
+  margin: 10px 0px 0px 0px;
+  text-align: left;
+}
+
+.textPravidla {
+  font-size: 15px;
+}
+
+figure {
+  margin: 0 30px 50px 30px;
+}
+
+.ukazky {
+  display: flex;
+  flex-direction: column;
+}
+
+.ukazky figcaption {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.ukazky img {
+  width: 100%;
+}
+
+.uvodniStrankaBtn {
+  background-color: #1fcca4;
+}
+
+.uvodniStrankaBtn:hover {
+  background-color: #1cbb96;
+}
+
+/* @media screen and (max-width: 540px) {
+  
+} */
