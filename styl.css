@@ -102,6 +102,13 @@ figure {
   margin: 0 30px 50px 30px;
 }
 
+.kolecko,
+.krizek {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
 .ukazky {
   display: flex;
   flex-direction: column;
@@ -125,6 +132,25 @@ figure {
   background-color: #1cbb96;
 }
 
-/* @media screen and (max-width: 540px) {
-  
-} */
+@media screen and (min-width: 600px) {
+  .strankaPravidla {
+    flex-wrap: wrap;
+    width: 700px;
+    align-content: space-between;
+  }
+  .ukazky {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+  }
+
+  .ukazky figure {
+    flex: 1 1 40%;
+    padding: 0;
+    margin: 30px 15px;
+  }
+
+  .textPravidla {
+    font-size: 18px;
+  }
+}
