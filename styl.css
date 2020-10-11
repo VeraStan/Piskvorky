@@ -154,3 +154,66 @@ figure {
     font-size: 18px;
   }
 }
+
+/* styly pro stránku hra.html */
+
+.strankaHra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vmin;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.navigacniMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: baseline;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btnRestart,
+.btnHome {
+  border-radius: 7px;
+  border-style: none;
+  padding: 0;
+}
+.btnHome:hover,
+.btnHome:focus {
+  background-color: #1cbb96;
+}
+.btnRestart:hover,
+.btnRestart:focus {
+  background-color: #0090e9;
+}
+.btnRestart {
+  background-color: #0197f6;
+}
+.btnHome {
+  background-color: #1fcca4;
+}
+.btnRestart a,
+.btnHome a {
+  display: block;
+  padding: 8px 7px;
+}
+.hraciPole {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hraciPole button {
+  width: 8vmin;
+  height: 8vmin;
+  opacity: 0.5;
+  border: 0.5px solid black;
+}
