@@ -72,13 +72,13 @@ p {
   background-color: #0090e9;
 }
 
-/* speciální styly pro stránku pravidla.html */
+/* styly pro stránku pravidla.html */
 
 .strankaPravidla {
   display: flex;
   flex-wrap: nowrap;
-  background-color: #283e50;
   flex-direction: column;
+  background-color: #283e50;
   width: 350px;
   margin: 50px auto;
   border-radius: 10px 10px 0 0;
@@ -132,7 +132,7 @@ figure {
   background-color: #1cbb96;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .strankaPravidla {
     flex-wrap: wrap;
     width: 700px;
