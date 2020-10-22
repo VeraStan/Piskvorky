@@ -107,6 +107,9 @@ figure {
   filter: invert(100%);
   width: 1em;
   height: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .ukazky {
@@ -221,9 +224,24 @@ figure {
   height: 8vmin;
   opacity: 0.5;
   border: 1px solid black;
+  outline-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
 }
 
 .hraciPole button:hover,
 .hraciPole button:focus {
   filter: brightness(200%);
+}
+
+/* styly specifické pro stránku hra.js */
+
+.board__field--cross,
+.krizek {
+  background-image: url('images/cross.svg');
+}
+.board__field--circle,
+.kolecko {
+  background-image: url('images/circle.svg');
 }
