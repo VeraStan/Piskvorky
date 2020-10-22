@@ -226,8 +226,9 @@ figure {
   border: 1px solid black;
   outline-color: #000;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: 70%;
+  background-repeat: no-repeat;
+  background-color: #eee;
 }
 
 .hraciPole button:hover,
@@ -244,4 +245,19 @@ figure {
 .board__field--circle,
 .kolecko {
   background-image: url('images/circle.svg');
+}
+
+.board__field--circle,
+.board__field--cross {
+  animation-name: zvetseni;
+  animation-duration: 0.2s;
+}
+
+@keyframes zvetseni {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 70%;
+  }
 }

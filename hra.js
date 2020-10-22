@@ -8,9 +8,10 @@ const hrajeSymbolElm = document.querySelector('#vymenitSymbol');
 for (let index = 0; index < buttonElm.length; index++) {
   const button = buttonElm[index];
   button.addEventListener('click', (e) => {
-    if (e.target.classList.length) {
+    if (e.target.classList.length !== 0) {
       return false;
     }
+    e.target.setAttribute('disabled', true);
     if (jeNaTahu === 'circle') {
       e.target.classList.add('board__field--circle');
       hrajeSymbolElm.classList.remove('kolecko');
